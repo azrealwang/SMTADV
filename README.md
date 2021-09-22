@@ -2,11 +2,13 @@
 
 ## Introduction
 
-Run attack: SMTADV-ST.py, SMTADV-MT.py, SMTADV-MS.py
+Run attack: 
+
+* SMTADV-ST.py, SMTADV-MT.py, SMTADV-MS.py
+* Benchmarking attacks: FGSM.py, DeepFool.py, CW.py, PGD.py
 
 Objective function: foolbox/attacks/gradient_descent_base.py
 
-Benchmarking attacks: FGSM.py, DeepFool.py, CW.py, PGD.py
 
 New developed tools: foolbox/utils.py
 
