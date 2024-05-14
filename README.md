@@ -6,7 +6,7 @@ Hanrui Wang, Shuo Wang, Cunjian Chen, Massimo Tistarelli, Zhe Jin
 
 Deep-learning-based identity management systems, such as face authentication systems, are vulnerable to adversarial attacks. However, existing attacks are typically designed for single-task purposes, which means they are tailored to exploit vulnerabilities unique to the individual target rather than being adaptable for multiple users or systems. This limitation makes them unsuitable for certain attack scenarios, such as morphing, universal, transferable, and counter attacks. In this paper, we propose a multi-task adversarial attack algorithm called MTADV that are adaptable for multiple users or systems. By interpreting these scenarios as multi-task attacks, MTADV is applicable to both single- and multi-task attacks, and feasible in the white- and gray-box settings. Importantly, MTADV retains its feasibility as a single-task attack targeting a single user/system. To the best of our knowledge, MTADV is the first adversarial attack method that can target all of the aforementioned scenarios in one algorithm.
 
-* The single-task adversarial attacks against face authentication.
+* The [single-task](https://github.com/azrealwang/SGADV/) adversarial attacks against face authentication.
 <img src="figures/ST" alt="MTADV-ST" style="width:400px;"/>
 
 * The multi-task adversarial attack impersonating multiple users.
@@ -49,11 +49,25 @@ Source image name must satisfy `00000_0.jpg`. `00000` and `_0` indicates the ima
 * [FaceNet](https://github.com/timesler/facenet-pytorch): InceptionResnetV1 pretrained using the VggFace2 dataset; automatically downloaded
 
 ## Usage
-Run attack:
+Run single-task attack (MTADV-ST):
 
 ```
-python SGADV.py
+python MTADV-ST.py
 ```
+
+Run morphing attack (MTADV-MA):
+
+```
+python MTADV-MA.py
+```
+
+Run transferable attack (MTADV-TA):
+
+```
+python MTADV-TA.py
+```
+
+Benchmarking attacks: FGSM.py, DeepFool.py, CW.py, PGD.py
 
 Objective function: foolbox/attacks/gradient_descent_base.py
 
@@ -63,20 +77,17 @@ Filter objects of CelebA: tools/fetch_celebAhq.py
 
 Feature embeddings and save to .mat: tools/feature_embedding.py
 
-
-## Results
-
-### Attack Success Rate (ASR)
-* The results are obtained for 1,580 images.
-
-| Dataset | EER (%) | ASR - White box(%) | ASR - Gray box(%) |
-|:---:|:----:|:-----:|:-----:|
-| FaceNet | 1.2 | 100 | 98.74 |
-| InsightFace | 6.23 | 100 | 93.23 |
-
 ## Citation
-If using this project in your research, please cite our paper.
+If using this project in your research, please cite our papers.
 ```
+@inproceedings{wang2021similarity,
+  title={Similarity-based Gray-box Adversarial Attack Against Deep Face Recognition},
+  author={Wang, Hanrui and Wang, Shuo and Jin, Zhe and Wang, Yandan and Chen, Cunjian and Tistarelli, Massimo},
+  booktitle={2021 16th IEEE International Conference on Automatic Face and Gesture Recognition (FG 2021)},
+  pages={1--8},
+  year={2021},
+}
+
 @inproceedings{wang2021similarity,
   title={Similarity-based Gray-box Adversarial Attack Against Deep Face Recognition},
   author={Wang, Hanrui and Wang, Shuo and Jin, Zhe and Wang, Yandan and Chen, Cunjian and Tistarelli, Massimo},
