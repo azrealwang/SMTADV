@@ -64,13 +64,15 @@ Run morphing attack (MTADV-MA):
 python MTADV-MA.py
 ```
 
+* The universal attack (MTADV-UA) can use MTADV-MA attacking 50 targets.
+
 Run transferable attack (MTADV-TA):
 
 ```
 python MTADV-TA.py
 ```
 
-* The universal attack (MTADV-UA) can use MTADV-MA attacking 50 targets.
+
 * The counter attack (MTADV-CA) can replace one model in MTADV-TA by a defense model.
 
 Benchmarking attacks: FGSM.py, DeepFool.py, CW.py, PGD.py
