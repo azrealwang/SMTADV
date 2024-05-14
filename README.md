@@ -7,13 +7,16 @@ Hanrui Wang, Shuo Wang, Cunjian Chen, Massimo Tistarelli, Zhe Jin
 Deep-learning-based identity management systems, such as face authentication systems, are vulnerable to adversarial attacks. However, existing attacks are typically designed for single-task purposes, which means they are tailored to exploit vulnerabilities unique to the individual target rather than being adaptable for multiple users or systems. This limitation makes them unsuitable for certain attack scenarios, such as morphing, universal, transferable, and counter attacks. In this paper, we propose a multi-task adversarial attack algorithm called MTADV that are adaptable for multiple users or systems. By interpreting these scenarios as multi-task attacks, MTADV is applicable to both single- and multi-task attacks, and feasible in the white- and gray-box settings. Importantly, MTADV retains its feasibility as a single-task attack targeting a single user/system. To the best of our knowledge, MTADV is the first adversarial attack method that can target all of the aforementioned scenarios in one algorithm.
 
 * The [single-task](https://github.com/azrealwang/SGADV/) adversarial attacks against face authentication.
-<img src="figures/ST" alt="MTADV-ST" style="width:400px;"/>
+<img src="figures/ST.png" alt="MTADV-ST" style="width:400px;"/>
 
 * The multi-task adversarial attack impersonating multiple users.
-<img src="figures/MA" alt="MTADV-MA" style="width:400px;"/>
+<img src="figures/MA.png" alt="MTADV-MA" style="width:400px;"/>
 
 * The multi-task adversarial attack attacking multiple systems.
-<img src="figures/TA" alt="MTADV-TA" style="width:400px;"/>
+<img src="figures/TA.png" alt="MTADV-TA" style="width:400px;"/>
+
+* Geometric proof of the feasibility of MTADV in various attack scenarios.
+<img src="figures/Geometric.png" alt="Geometric proof" style="width:400px;"/>
 
 ****
 ## Contents
@@ -66,6 +69,9 @@ Run transferable attack (MTADV-TA):
 ```
 python MTADV-TA.py
 ```
+
+* The universal attack (MTADV-UA) can use MTADV-MA attacking 50 targets.
+* The counter attack (MTADV-CA) can replace one model in MTADV-TA by a defense model.
 
 Benchmarking attacks: FGSM.py, DeepFool.py, CW.py, PGD.py
 
