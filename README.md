@@ -13,7 +13,7 @@ Deep-learning-based identity management systems, such as face authentication sys
 <img src="figures/MA.png" alt="MTADV-MA" style="width:400px;"/>
 
 * The multi-task adversarial attack attacking multiple systems.
-<img src="figures/TA.png" alt="MTADV-TA" style="width:400px;"/>
+<img src="figures/TA.png" alt="MTADV-TA" style="width:600px;"/>
 
 * Geometric proof of the feasibility of MTADV in various attack scenarios.
 <img src="figures/Geometric.png" alt="Geometric proof" style="width:400px;"/>
