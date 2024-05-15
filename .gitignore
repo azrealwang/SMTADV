@@ -1,6 +1,5 @@
-.project
-.pydevproject
 __pycache__/
 data
 mat
 results
+.DS_Store
