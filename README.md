@@ -55,13 +55,13 @@ Source image name must satisfy `00000_0.jpg`. `00000` and `_0` indicates the ima
 Run single-task attack (MTADV-ST):
 
 ```
-python MTADV-ST.py
+python MTADV_ST.py
 ```
 
 Run morphing attack (MTADV-MA):
 
 ```
-python MTADV-MA.py
+python MTADV_MA.py
 ```
 
 * The universal attack (MTADV-UA) can use MTADV-MA attacking 50 targets.
@@ -69,7 +69,7 @@ python MTADV-MA.py
 Run transferable attack (MTADV-TA):
 
 ```
-python MTADV-TA.py
+python MTADV_TA.py
 ```
 
 
