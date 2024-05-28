@@ -2,7 +2,7 @@
 
 Hanrui Wang, Shuo Wang, Cunjian Chen, Massimo Tistarelli, Zhe Jin
  
-[PDF]()
+[PDF](https://dl.acm.org/doi/pdf/10.1145/3665496)
 
 Deep-learning-based identity management systems, such as face authentication systems, are vulnerable to adversarial attacks. However, existing attacks are typically designed for single-task purposes, which means they are tailored to exploit vulnerabilities unique to the individual target rather than being adaptable for multiple users or systems. This limitation makes them unsuitable for certain attack scenarios, such as morphing, universal, transferable, and counter attacks. In this paper, we propose a multi-task adversarial attack algorithm called MTADV that are adaptable for multiple users or systems. By interpreting these scenarios as multi-task attacks, MTADV is applicable to both single- and multi-task attacks, and feasible in the white- and gray-box settings. Importantly, MTADV retains its feasibility as a single-task attack targeting a single user/system. To the best of our knowledge, MTADV is the first adversarial attack method that can target all of the aforementioned scenarios in one algorithm.
 
@@ -88,12 +88,14 @@ Feature embeddings and save to .mat: tools/feature_embedding.py
 ## Citation
 If using this project in your research, please cite our papers.
 ```
-@inproceedings{wang2021similarity,
-  title={Similarity-based Gray-box Adversarial Attack Against Deep Face Recognition},
-  author={Wang, Hanrui and Wang, Shuo and Jin, Zhe and Wang, Yandan and Chen, Cunjian and Tistarelli, Massimo},
-  booktitle={2021 16th IEEE International Conference on Automatic Face and Gesture Recognition (FG 2021)},
-  pages={1--8},
-  year={2021},
+@article{wang2024amulti,
+author = {Wang, Hanrui and Wang, Shuo and Chen, Cunjian and Tistarelli, Massimo and Jin, Zhe},
+title = {A Multi-task Adversarial Attack Against Face Authentication},
+year = {2024},
+publisher = {Association for Computing Machinery},
+doi = {10.1145/3665496},
+journal = {ACM Transactions on Multimedia Computing, Communications, and Applications},
+month = {may},
 }
 
 @inproceedings{wang2021similarity,
