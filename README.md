@@ -88,14 +88,16 @@ Feature embeddings and save to .mat: tools/feature_embedding.py
 ## Citation
 If using this project in your research, please cite our papers.
 ```
-@article{wang2024amulti,
-author = {Wang, Hanrui and Wang, Shuo and Chen, Cunjian and Tistarelli, Massimo and Jin, Zhe},
-title = {A Multi-task Adversarial Attack Against Face Authentication},
-year = {2024},
-publisher = {Association for Computing Machinery},
-doi = {10.1145/3665496},
-journal = {ACM Transactions on Multimedia Computing, Communications, and Applications},
-month = {may},
+@article{wang2024multi,
+  title={A multi-task adversarial attack against face authentication},
+  author={Wang, Hanrui and Wang, Shuo and Chen, Cunjian and Tistarelli, Massimo and Jin, Zhe},
+  journal={ACM Transactions on Multimedia Computing, Communications and Applications},
+  volume={20},
+  number={11},
+  pages={1--24},
+  year={2024},
+  doi = {10.1145/3665496},
+  publisher={ACM New York, NY}
 }
 
 @inproceedings{wang2021similarity,
